@@ -40,7 +40,7 @@ export default async function NotificationsPage() {
       </div>
 
       <NotificationList
-        initial={notifications as Parameters<typeof NotificationList>[0]["initial"]}
+        initial={notifications as unknown as Parameters<typeof NotificationList>[0]["initial"]}
       />
     </div>
   );
